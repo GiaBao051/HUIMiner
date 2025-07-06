@@ -1,16 +1,14 @@
+
 package HUIMiner;
 
-// Định nghĩa cấu trúc UtilityList: lưu tid, iutil, rutil
-class Element{
-    int tid;       // Transaction ID
-    int iutil;     // Internal utility
-    int rutil;     // Remaining utility
+public class Element {
+    public final int tid;
+    public final int iutils;
+    public int rutils;
 
-    public Element(int tid, int iutil, int rutil){
+    public Element(int tid, int iutils, int rutils) {
         this.tid = tid;
-        this.iutil = iutil;
-        this.rutil = rutil;
+        this.iutils = iutils;
+        this.rutils= rutils;
     }
 }
-
-
